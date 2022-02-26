@@ -3,3 +3,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    text-align: center;
+    transition: all .5s ease-in-out;
+    .time{
+        h1{
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 0;
+            font-size: 10rem;
+            padding: 0 .5em;
+        }
+    }
+    .theme{
+        h2{
+            display: inline-block;
+        }
+    }
+}

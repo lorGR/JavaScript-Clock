@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time is ticking</title>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,23 @@
     <!--Style CSS-->
 </head>
 <body>
-    <h1>Time is ticking...</h1>
-    <p id="currentTime" >TIME</p>
+    <section class="time">
+        <h1>Time is ticking...</h1>
+        <p id="currentTime">TIME</p>
+        <span>spend your time wisely</span>
+    </section>
+
+    <section class="theme">
+        <div>
+            <form action="/">
+                <h2>Theme:</h2>
+                <label for="brightTheme">Bright</label>
+                <input type="radio" name="theme" value="brightTheme" id="brightTheme">
+                <label for="darkTheme">Dark</label>
+                <input type="radio" name="theme" value="darkTheme" id="darkTheme">
+            </form>
+        </div>
+    </section>
     <script src="dist/app.js"></script>
 </body>
 </html>

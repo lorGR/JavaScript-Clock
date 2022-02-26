@@ -2,3 +2,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+body .time h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+body .time p {
+  margin: 0;
+  font-size: 10rem;
+  padding: 0 0.5em;
+}
+body .theme h2 {
+  display: inline-block;
+}

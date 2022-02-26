@@ -1,3 +1,5 @@
+const form = document.querySelector('form')
+
 time()
 
 function time(){
@@ -22,3 +24,21 @@ function time(){
     setTimeout(time, 1000)
 
 }
+
+function changeTheme(form, error){
+    error.preventDefault()
+    form = document.querySelector('form')
+    const brightTheme = (form.elements[0])
+
+    if(brightTheme.checked){
+        document.body.style.backgroundColor = 'white'
+        document.body.style.color = 'black'
+    }else{
+        document.body.style.backgroundColor = 'black'
+        document.body.style.color = 'white'
+    }
+}
+
+form.addEventListener('change', (e)=> {
+    changeTheme(form, e)
+})
