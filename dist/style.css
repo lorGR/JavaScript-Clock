@@ -4,19 +4,39 @@
 }
 
 body {
+  height: 100vh;
   text-align: center;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-body .time h1 {
-  font-size: 3rem;
+body .page-container {
+  display: flex;
+  flex-direction: column;
+}
+body .page-container .time h1 {
+  font-size: 1.5rem;
   margin: 0;
   text-transform: uppercase;
 }
-body .time p {
+body .page-container .time p {
   margin: 0;
-  font-size: 10rem;
+  font-size: 6rem;
   padding: 0 0.5em;
 }
-body .theme h2 {
+body .page-container .theme h2 {
   display: inline-block;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media (min-width: 960px) {
+  html {
+    font-size: 36px;
+  }
 }
